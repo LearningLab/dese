@@ -1,0 +1,10 @@
+common:
+
+  database: sqlite:///output/districts.db
+  prefix: output/
+  format: csv
+
+exports:
+
+  - query: 'SELECT * FROM districts'
+    filename: 'districts.csv'
